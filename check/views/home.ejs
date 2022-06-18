@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/home.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Schedular</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <img src="./images/pages-fill.png" alt="" class="logo">
+        <h3 class="logo-name">Lecture Schedular</h3>
+    </div>
+    <div class="container">
+        <div class="img-container">
+            <img src="./images/index-image.jpg" alt="index-image" class="index-image">
+        </div>
+        <div class="form-container">
+            <form method="post" action="/" class="form-submit">
+                <div class="select-radio">
+                    <input type="radio" name="user" value="fac"> Faculty
+                    <input type="radio" name="user" value="stu"> Student
+                </div>
+
+                <div class="select-opt">
+                    <select class="select-list">
+                        <option value="0" selected disabled>Department</option>
+                        <option value="cs">COMPUTER SCIENCE ENGINEERING</option>
+                        <option value="ec">ELECTRONICS & COMMUNICATION ENGINEERING</option>
+                        <option value="mc">MECHANICAL ENGINEERING</option>
+                        <option value="el">ELECTRICAL ENGINEERING</option>
+                        <option value="cv">CIVIL ENGINEERING</option>
+                        <option value="ex">ELECTRICAL & ELECTRONICS ENGINEERING</option>
+                    </select>
+                </div>
+
+                <div class="select-opt">
+                    <select class="select-list">
+                        <option value="0" selected disabled>Semester</option>
+                        <option value="sem1">SEMESTER I</option>
+                        <option value="sem2">SEMESTER II</option>
+                        <option value="sem3">SEMESTER III</option>
+                        <option value="sem4">SEMESTER IV</option>
+                        <option value="sem5">SEMESTER V</option>
+                        <option value="sem6">SEMESTER VI</option>
+                        <option value="sem7">SEMESTER VII</option>
+                        <option value="sem8">SEMESTER VIII</option>
+                    </select>
+                </div>
+
+                <div class="select-opt">
+                    <select class="select-list">
+                        <option value="0" selected disabled>Section</option>
+                        <option value="sec1">SECTION I</option>
+                        <option value="sec2">SECTION II</option>
+                        <option value="sec3">SECTION III</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="enter-btn">Enter Class</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

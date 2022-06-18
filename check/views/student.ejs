@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/student.css">
+    <title>Scheduled Lectures</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation-wrapper">
+            <div class="greet-wrapper">
+                <div class="icon"><img src="./images/student 1.png" alt=""></div>
+                <div class="greet-text">Hello Student</div>
+            </div>
+            <div class="details-wrapper">
+                <div>Computer Science Department</div>
+                <div>Semester - I</div>
+                <div>Section - I</div>
+            </div>
+
+        </div>
+
+        <div class="hero-wrapper">
+            <div class="classes-wrapper">
+                <% details.forEach(function(detail){ %>
+                    <div class="classes">
+                            <div class="class-details">
+                                <h3 class="class-title"><%= detail.title %></h3>
+                                <div class="detail">
+                                    <span><%= detail.faculty %></span>
+                                    <br>
+                                    <span><%= detail.time %><span>
+                                </div>
+                                <div><a href="http://meet.google.com/nzx-rrfr-apw" class="class-link"><%= detail.link %></a></div>
+                            </div>
+                    </div>
+                <% }) %>
+                <!-- <div class="classes">
+                    <div class="class-details">
+                        <h3 class="class-title">Object Oriented Programming</h3>
+                        <div class="detail">
+                            <span>Prof. Vipin Verma</span>
+                            <br>
+                            <span>10:00AM - 11:00AM</span>
+                        </div>
+                        <div><a href="http://meet.google.com/nzx-rrfr-apw" class="class-link">http://meet.google.com/nzx-rrfr-apw</a></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

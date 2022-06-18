@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/faculty.css">
+    <title>Faculty Scheduled</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation-wrapper">
+            <div class="greet-wrapper">
+                <div><img class="icon" src="/images/user-3-fill.png" alt=""></div>
+                <div class="greet-text">Welcome Faculty</div>
+            </div>
+            <div class="details-wrapper">
+                <div>Computer Science Department</div>
+                <div>Semester - I</div>
+                <div>Section - I</div>
+            </div>
+
+        </div>
+
+        <div class="hero-wrapper">
+
+            <div class="classes-wrapper">
+                
+                <!-- <% for(var i=0; i<details.length; i++){ %>
+                <%    console.log(details[i].title); %>
+                <% }; %> -->
+                <% details.forEach(function(detail){ %>
+                    <div class="classes">
+                        <form action="/delete" method="post">
+                            <div class="class-details">
+                                <h3 class="class-title"><%= detail.title %></h3>
+                                <div class="detail">
+                                    <span><%= detail.faculty %></span>
+                                    <br>
+                                    <span><%= detail.time %><span>
+                                </div>
+                                <div><a href="http://meet.google.com/nzx-rrfr-apw" class="class-link"><%= detail.link %></a></div>
+                            </div>
+        
+                            <div class="cbtn-div">
+                                <button type="submit" name="cancelSubmission" value="<%= detail._id %>" class="cancel-btn">cancel class</button>
+                            </div>
+                        </form>
+                    </div>
+                <% }) %>
+                <div class="classes" id="add">
+                    <form action="/faculty" method="post" id="add-class">
+                        <input type="text" name="addTitle" class="class-title" id="add-title" placeholder="enter class title" autocomplete="off">
+                        <div class="detail" id="add-detail">
+                            <input type="text" name="addFacultyName" placeholder="enter faculty name" id="add-name" autocomplete="off">
+                            <br>
+                            <input type="text" name="addTime" placeholder="enter class time" id="add-time" autocomplete="off">
+                        </div>
+                        <input type="url" name="addLink" class="class-link" id="add-link" placeholder="enter class link" autocomplete="off">
+                        <div class="cbtn-div">
+                            <button type="submit" class="add-btn">Add class</button>
+                        </div>
+                    </form>
+
+                </div>
+              
+                </div>
+            
+            </div>
+
+
+  
+        </div>
+    </div>
+</body>
+
+</html>

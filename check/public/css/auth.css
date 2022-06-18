@@ -1,0 +1,58 @@
+.hero-wrapper{
+    font-family:"work-sans",sans-serif;
+    display: flex;
+}
+.container{
+    padding-left: 150px;
+    padding-top: 30px;
+    margin-right: 220px ;
+}
+.bg-img{
+    height: 650px;
+    width: 650px;
+}
+.enter{
+    width: 260px;
+    height: 35px;
+    text-align: center;
+    background-color: #B8E4E7;
+    border-style: none;
+    border-radius: 15px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    margin-right: 60px;
+}
+.sub-container{
+    padding: 40px 10px 50px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(250, 235, 215, 0.308);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.text{
+    text-align: center;
+    /* padding: 0px 0px 0px 20px; */
+    padding: 10px;
+    padding-left: 20px;
+}
+.key-img{
+    padding-left: 110px;
+    padding-bottom: 0px;
+}
+.btn{
+    margin: 30px 0px 0px 102px;
+}
+.auth{
+    padding: 5px 5px 5px 5px;
+    background-color: #fcc54dcb;
+    border: 2px groove black;
+    cursor: pointer;
+}
+.pass{
+    margin-top: 30px;
+    padding-left: 10px;
+}
